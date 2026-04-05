@@ -1,0 +1,39 @@
+GDRE Tools v2.5.0-beta.4
+Fedora Linux 43 (Workstation Edition), Intel(R) UHD Graphics 620 (KBL GT2), vulkan
+WARNING: Could not find embedded pck in EXE, found pck file, loading from: /home/david/Downloads/Night_Terrors_Ghost_Guardian/NightTerrors.pck
+   at: sort_and_validate_pck_files (modules/gdsdecomp/utility/gdre_settings.cpp:612)
+Opening file: ~/Downloads/Night_Terrors_Ghost_Guardian/NightTerrors.pck
+Opening file: ~/Downloads/Night_Terrors_Ghost_Guardian/NightTerrors.pck
+ERROR: Can't load PCK, already loaded from /home/david/Downloads/Night_Terrors_Ghost_Guardian/NightTerrors.pck
+   at: _add_pack (modules/gdsdecomp/utility/gdre_settings.cpp:683)
+Guessing bytecode revision from engine version: 4.0.2 (rev 0x77af6ca)
+Loaded 154 imported files
+Detected Engine Version: 4.0.2
+Detected Bytecode Revision: 4.3.0-stable (77af6ca)
+Verified 345 files, no errors detected!
+Extracted 345 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  154
+Successfully converted:                 154
+Lossy:                                  1
+Rewrote metadata:                       132
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.0.2 to edit the project.
+
+*******************************************************************************
+

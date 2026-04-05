@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt8my4qaqyh5n"]
+
+[ext_resource type="Script" path="res://xd/spikes.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dkc4ms1edi1dq" path="res://Art/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Assets/Hive.png" id="2"]
+
+[node name="Spikes" type="Area2D"]
+script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("2")
+region_enabled = true
+region_rect = Rect2(0, 160, 32, 16)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-15, 0, -12, -10, -12, -14, -11, -14, -11, -10, -9, -4, -5, -4, -3, -10, -1, -4, 2, -4, 4, -12, 8, -3, 11, -2, 13, -10, 15, -2, 16, -3, 16, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered" flags=18]

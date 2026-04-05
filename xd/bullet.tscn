@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://clyly4p7vx11j"]
+
+[ext_resource type="Script" path="res://xd/bullet.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ehsr2llo26rl" path="res://assets/FINAL.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://ckbxwvwchchk4" path="res://characters/playerlight.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://byj3dyspojt3c" path="res://assets/pngfind.com-searchlight-png-2461752.png" id="4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ucw6p"]
+radius = 5.0
+height = 22.0
+
+[node name="bullet" type="Area2D"]
+position = Vector2(-5, 0)
+collision_layer = 0
+collision_mask = 5
+script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, 0)
+texture = ExtResource("2")
+region_enabled = true
+region_rect = Rect2(421.646, 20.8913, 23.1073, 11.351)
+
+[node name="Node2D" parent="." instance=ExtResource("3")]
+position = Vector2(1, 1)
+scale = Vector2(0.508127, 0.508127)
+texture = ExtResource("4")
+texture_scale = 0.36
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ucw6p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered" flags=18]

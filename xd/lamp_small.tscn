@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://4a754xre38qb"]
+
+[ext_resource type="Texture2D" uid="uid://ehsr2llo26rl" path="res://assets/FINAL.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://byj3dyspojt3c" path="res://assets/pngfind.com-searchlight-png-2461752.png" id="2"]
+
+[node name="lamp_small" type="Sprite2D"]
+texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(318.323, 15.7021, 12.5671, 16.6211)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-7.62939e-06, 3)
+scale = Vector2(0.256595, 0.256595)
+blend_mode = 2
+texture = ExtResource("2")

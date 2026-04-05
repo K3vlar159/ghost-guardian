@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtxdfys0mwig6"]
+
+[ext_resource type="Texture2D" uid="uid://byj3dyspojt3c" path="res://assets/pngfind.com-searchlight-png-2461752.png" id="1"]
+
+[node name="PointLight2D" type="PointLight2D"]
+blend_mode = 2
+texture = ExtResource("1")
+texture_scale = 0.4

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d213nbweet5gm"]
+
+[ext_resource type="Texture2D" uid="uid://ehsr2llo26rl" path="res://assets/FINAL.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://dtxdfys0mwig6" path="res://xd/light.tscn" id="2"]
+
+[node name="Lamp_tall" type="Sprite2D"]
+texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(447.782, 120.746, 81.1539, 135.199)
+
+[node name="PointLight2D" parent="." instance=ExtResource("2")]
+position = Vector2(2.28882e-05, -10)
+scale = Vector2(1.59722, 1.0012)

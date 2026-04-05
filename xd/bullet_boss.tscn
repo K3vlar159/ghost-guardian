@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm5emqlin564q"]
+
+[ext_resource type="Script" path="res://bulletBoss.gd" id="1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ri5b"]
+load_path = "res://.godot/imported/FINAL.png-fb81fc69c70d66779353283b6fc1425e.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rvlr"]
+size = Vector2(10, 6.5)
+
+[node name="bulletBoss" type="Area2D"]
+scale = Vector2(2, 2)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_8ri5b")
+region_enabled = true
+region_rect = Rect2(400.214, 22.2697, 14.8644, 10.5402)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_3rvlr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered" flags=18]
